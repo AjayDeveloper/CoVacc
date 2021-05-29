@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtCenterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_local_hospital_24"
+            android:drawablePadding="4dp"
+            android:padding="3dp"
+            android:text="Hospital Name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/txtCenterLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:drawablePadding="4dp"
+            android:padding="4dp"
+            android:text="Hospital Location"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtCenterName" />
+
+
+        <TextView
+            android:id="@+id/txtCenterTiming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_access_time_24"
+            android:drawablePadding="4dp"
+            android:padding="4dp"
+            android:text="Hospital Timings"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtCenterLocation" />
+
+
+        <TextView
+            android:id="@+id/txtVaccineName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_airline_seat_flat_angled_24"
+            android:drawablePadding="4dp"
+            android:padding="4dp"
+            android:text="Vaccine Name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtCenterTiming" />
+
+        <TextView
+            android:id="@+id/txtVaccineType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:drawablePadding="4dp"
+            android:padding="4dp"
+            android:text="Vaccine Type"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txtVaccineName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtCenterTiming" />
+
+
+        <TextView
+            android:id="@+id/txtAgeLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_airline_seat_flat_angled_24"
+            android:drawablePadding="4dp"
+            android:padding="4dp"
+            android:text="Age Limit"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtVaccineName" />
+
+        <TextView
+            android:id="@+id/txtVaccineAva"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:drawablePadding="4dp"
+            android:padding="4dp"
+            android:text="Availability "
+            android:textAlignment="viewEnd"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txtVaccineName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtVaccineType" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
